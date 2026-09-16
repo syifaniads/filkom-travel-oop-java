@@ -1,10 +1,27 @@
 # Filkom Travel — Java OOP Coursework Refactor
 
-[![Java CI](https://github.com/syifaniads/PBO3/actions/workflows/java-ci.yml/badge.svg)](https://github.com/syifaniads/PBO3/actions/workflows/java-ci.yml)
+[![Java CI](https://github.com/syifaniads/filkom-travel-oop-java/actions/workflows/java-ci.yml/badge.svg)](https://github.com/syifaniads/filkom-travel-oop-java/actions/workflows/java-ci.yml)
 
 A portfolio-focused refactor of a **2024 Object-Oriented Programming coursework project**: a vehicle-rental workflow with members and guests, carts, orders, percentage discounts, cashback promotions, and balance-based checkout.
 
 The original coursework is preserved on the `archive/original-coursework-2024` branch. `main` is a 2026 portfolio reconstruction that keeps the original domain and OOP ideas while making the codebase reproducible, testable, and easier to review.
+
+<p align="center">
+  <img src="docs/assets/domain-model.svg" alt="Filkom Travel OOP domain model" width="1000" />
+</p>
+
+> **Visual provenance:** the diagram is derived from the current Maven source tree and tested business flow. It represents the portfolio implementation; it is not a screenshot of the historical GUI prototype.
+
+## Senior technical review path
+
+| Review question | Inspect |
+|---|---|
+| Is the OOP design actually reflected in code? | [`src/main/java/id/ac/ub/filkomtravel/model/`](src/main/java/id/ac/ub/filkomtravel/model/) and [`promotion/`](src/main/java/id/ac/ub/filkomtravel/promotion/) |
+| Where is orchestration separated from entities? | [`TravelService.java`](src/main/java/id/ac/ub/filkomtravel/service/TravelService.java) |
+| Are important business rules executable? | [`TravelServiceTest.java`](src/test/java/id/ac/ub/filkomtravel/service/TravelServiceTest.java) |
+| What changed from the coursework version? | [`docs/ENGINEERING_REVIEW.md`](docs/ENGINEERING_REVIEW.md) |
+| What is historical vs reconstructed? | [`PROJECT_PROVENANCE.md`](PROJECT_PROVENANCE.md), [`SOURCE_EVIDENCE.md`](SOURCE_EVIDENCE.md) |
+| Does the repository build continuously? | [Java CI workflow](.github/workflows/java-ci.yml) |
 
 ## Why this repository exists
 
