@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Filkom Travel OOP domain model</title>
+  <desc id="desc">Customer abstraction specialized by Member and Guest, with cart items, vehicles, orders, and polymorphic promotions coordinated by TravelService.</desc>
+  <rect width="1200" height="430" fill="#0d1117"/>
+  <style>.b{fill:#161b22;stroke:#58a6ff;stroke-width:2;rx:14}.g{fill:#161b22;stroke:#3fb950;stroke-width:2;rx:14}.o{fill:#161b22;stroke:#d29922;stroke-width:2;rx:14}.t{fill:#f0f6fc;font:600 18px system-ui,-apple-system,Segoe UI,sans-serif}.s{fill:#8b949e;font:14px system-ui,-apple-system,Segoe UI,sans-serif}.l{stroke:#8b949e;stroke-width:3;fill:none;marker-end:url(#a)}</style>
+  <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#8b949e"/></marker></defs>
+  <text x="40" y="42" class="t">Filkom Travel — OOP domain model</text>
+  <text x="40" y="67" class="s">Derived from the current Maven implementation and JUnit-tested business flow</text>
+  <rect x="40" y="140" width="180" height="90" class="b"/><text x="74" y="175" class="t">TravelService</text><text x="67" y="200" class="s">application boundary</text>
+  <rect x="285" y="95" width="170" height="90" class="g"/><text x="330" y="130" class="t">Customer</text><text x="322" y="155" class="s">abstract base</text>
+  <rect x="520" y="70" width="150" height="80" class="g"/><text x="558" y="105" class="t">Member</text><text x="548" y="130" class="s">eligible promos</text>
+  <rect x="520" y="180" width="150" height="80" class="g"/><text x="560" y="215" class="t">Guest</text><text x="546" y="240" class="s">no member promo</text>
+  <rect x="745" y="70" width="165" height="80" class="o"/><text x="792" y="105" class="t">CartItem</text><text x="772" y="130" class="s">vehicle + duration</text>
+  <rect x="745" y="180" width="165" height="80" class="o"/><text x="795" y="215" class="t">Order</text><text x="770" y="240" class="s">immutable snapshot</text>
+  <rect x="985" y="70" width="165" height="80" class="b"/><text x="1035" y="105" class="t">Vehicle</text><text x="1010" y="130" class="s">typed rental item</text>
+  <rect x="985" y="180" width="165" height="80" class="b"/><text x="1018" y="215" class="t">Promotion</text><text x="999" y="240" class="s">discount / cashback</text>
+  <rect x="745" y="320" width="405" height="70" class="b"/><text x="790" y="350" class="t">Polymorphic checkout</text><text x="790" y="374" class="s">eligibility → capped benefit → balance validation → order history</text>
+  <path d="M220 180 H285" class="l"/><path d="M455 125 H520" class="l"/><path d="M455 155 C480 180 490 210 520 220" class="l"/><path d="M670 105 H745" class="l"/><path d="M670 220 H745" class="l"/><path d="M910 110 H985" class="l"/><path d="M910 220 H985" class="l"/><path d="M1067 260 V320" class="l"/><path d="M825 260 V320" class="l"/>
+</svg>
